@@ -1,3 +1,6 @@
+#ifndef UTILS_STRUCTRURE_H
+#define UTILS_STRUCTRURE_H
+
 ///
 /// Definition for a binary tree node.
 /// 
@@ -18,3 +21,4 @@ struct ListNode {
     ListNode *next;
     ListNode(int x) : val(x), next(nullptr) {}
 }; 
+#endif
