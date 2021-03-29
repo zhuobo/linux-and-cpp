@@ -15,7 +15,9 @@ namespace utils {
 
 class HashChain {
 public:
-    HashChain(int table_len) 
+    HashChain() : hash_table_(0), table_len_(0){}
+
+    explicit HashChain(int table_len) 
         : hash_table_(table_len, nullptr),
           table_len_(table_len) {}
 
