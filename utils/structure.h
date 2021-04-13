@@ -21,4 +21,17 @@ struct ListNode {
     ListNode *next;
     ListNode(int x) : val(x), next(nullptr) {}
 }; 
+
+///
+/// double linked list node
+/// 
+struct DListNode {
+    int         key;
+    int         val;
+    DListNode*  next;
+    DListNode*  prev;
+    DListNode() : key(0), val(0), next(nullptr), prev(nullptr) {}
+    DListNode(int _key, int _val) : key(_key), val(_val), next(nullptr), prev(nullptr) {}
+};
+
 #endif
