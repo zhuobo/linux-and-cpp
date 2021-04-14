@@ -34,4 +34,18 @@ struct DListNode {
     DListNode(int _key, int _val) : key(_key), val(_val), next(nullptr), prev(nullptr) {}
 };
 
+/// 
+/// Trie Node
+///
+struct TrieNode {
+    bool end;
+    TrieNode* next[26];
+    TrieNode() : end(false) {
+        for ( int i = 0; i < 26; ++i ) {
+            next[i] = nullptr;
+        }
+    }
+};
+
+
 #endif
