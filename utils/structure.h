@@ -38,14 +38,14 @@ struct DListNode {
 /// Trie Node
 ///
 struct TrieNode {
-    bool end;
-    TrieNode* next[26];
-    TrieNode() : end(false) {
+    int    count;        // 字典树中本节点的数量
+    int    end_count;    // 以本节点为结尾的单词的数量
+    TrieNode*  next[26];     // 26个指针
+    TrieNode() : count(0), end_count(0) {
         for ( int i = 0; i < 26; ++i ) {
             next[i] = nullptr;
         }
     }
 };
-
 
 #endif
